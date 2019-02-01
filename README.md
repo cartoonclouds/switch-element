@@ -36,14 +36,14 @@ A switch form element (utilising the Laravel Collective [custom component](https
 
 |Theme|Hex|
 | --- | --- |
-|Primary|#007BFF|
-|Secondary|#FFC107|
-|Success|#17A2B8|
-|Danger|#DC3545|
-|Warning|#343A40|
-|Info|#17A2B8|
-|Light|#FFFFFF|
-|Dark|#FFFFFF|
+|Primary|![#007BFF](https://placehold.it/15/007BFF/000000?text=+) `#007BFF`|
+|Secondary|![#FFC107](https://placehold.it/15/FFC107/000000?text=+) `#FFC107`|
+|Success|![#17A2B8](https://placehold.it/15/17A2B8/000000?text=+) `#17A2B8`|
+|Danger|![#DC3545](https://placehold.it/15/DC3545/000000?text=+) `#DC3545`|
+|Warning|![#343A40](https://placehold.it/15/343A40/000000?text=+) `#343A40`|
+|Info|![#17A2B8](https://placehold.it/15/17A2B8/000000?text=+) `#17A2B8`|
+|Light|![#FFFFFF](https://placehold.it/15/FFFFFF/000000?text=+) `#FFFFFF`|
+|Dark|![#000000](https://placehold.it/15/000000/000000?text=+) `#000000`|
 (the hex values will differ if you've customised your Bootstrap)
 
 **[array] attributes**
