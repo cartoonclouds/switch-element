@@ -10,7 +10,7 @@ A switch form element (utilising the Laravel Collective [custom component](https
 1. Add to `AppServiceProvider@boot()` the component definition:
 
 ```php
-\Form::component('switch', 'templates._switch-partial', ['label', 'value', 'text' => ['Yes', 'No'], 'color' => 'success', 'attributes' => []]);
+\Form::component('switch', 'templates._switch-partial', ['name', 'value', 'label', 'text' => ['Yes', 'No'], 'color' => 'success', 'attributes' => []]);
 ```
 
 2. Include the **_switch-partial.blade.php** blade file to _/resources/views/templates/_
@@ -20,12 +20,16 @@ A switch form element (utilising the Laravel Collective [custom component](https
 {{ Form::switch(label, value, text, theme, attributes) }}
 ```
 
-**[string] label**
-> The text which will sit next to (generally to the left of) the switch component.
+**[string] name**
+> Names the input element and the value to check upon form submission.
 
 **[string] value**
 > This is the value which will be sent on form submission.
 > **Important:** The truthiness of the value determines the state of the switch.
+
+**[string] label**
+> The text which will sit next to (generally to the left of) the switch component. Use the class `.control-label` to style (eg, `display:block` forces the label to be on a different line than the switch.
+> This value is **not** escaped by Laravel so HTML is permissable here.
 
 **[array] text**
 > Must be an array of **two** values - the "on" text and "off" text.
