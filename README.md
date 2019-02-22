@@ -17,7 +17,7 @@ A switch form element (utilising the Laravel Collective [custom component](https
 
 ## Usage
 ```php
-{{ Form::switch(label, value, text, theme, attributes) }}
+{{ Form::switch(name, value, label, text, theme, attributes) }}
 ```
 
 **[string] name**
@@ -64,5 +64,5 @@ A switch form element (utilising the Laravel Collective [custom component](https
 
 ## Example
 ```php
-{{ Form::switch('Online Store?', $store->online, ['Yes', 'No'], 'success', ['class' => 'online_class']) }}
+{{ Form::switch('online_store', $store->online, 'Online Store?', ['Yes', 'No'], 'success', ['class' => 'online_class']) }}
 ```
